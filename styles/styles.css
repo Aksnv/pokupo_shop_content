@@ -7,3 +7,85 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 978px;
+  margin: 0 auto;
+}
+
+/* Page header */
+
+.page-header__logo,
+.page-header__header {
+  float: left;
+}
+
+.page-header__cart,
+.page-header__login {
+  float: right;
+}
+
+.page-header__menu {
+  clear: both;
+}
+
+.page-header__menu li {
+  float: left;
+}
+
+.page-header__platform {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Page search */
+
+.page-search {
+  clear: both;
+}
+
+/* Page content */
+
+.page-content__left-column,
+.page-content__right-column {
+  float: left;
+}
+
+.page-content__left-column {
+  width: 248px;
+}
+
+.page-content__right-column {
+  width: 730px;
+}
+
+.page-content__breadcrumbs {
+  float: left;
+}
+
+.page-content__advanced-search {
+  float: right;
+}
+
+.page-content__article {
+  clear: both;
+}
+
+/* Page footer */
+
+.page-footer {
+  clear: both;
+}
+
+.page-footer__column {
+  float: left;
+}
+
+.page-footer__payment-systems {
+  clear: both;
+}
