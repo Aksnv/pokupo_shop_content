@@ -59,19 +59,23 @@
     <div class="container">
       <form name="search-form" action="#" method="post">
         <input type="search" name="search-field" placeholder="Поиск по каталогу...">
-        <select>
-          <option>Все категории</option>
-          <option>Компьютерная техника</option>
-          <option>Бытовая техника и электроника</option>
-          <option>Телефоны и связь</option>
-          <option>Фото и оптика</option>
-          <option>Одежда, обувь и аксессуары</option>
-          <option>Праздники и подарки</option>
-          <option>Книги, учебники и журналы</option>
-          <option>Мебель, интерьер и обиход</option>
-          <option>Другое</option>
-        </select>
-        <input type="submit" name="search-button" value="Искать">
+        <label class="select-button">
+          <select>
+            <option>Все категории</option>
+            <option>Компьютерная техника</option>
+            <option>Бытовая техника и электроника</option>
+            <option>Телефоны и связь</option>
+            <option>Фото и оптика</option>
+            <option>Одежда, обувь и аксессуары</option>
+            <option>Праздники и подарки</option>
+            <option>Книги, учебники и журналы</option>
+            <option>Мебель, интерьер и обиход</option>
+            <option>Другое</option>
+          </select>
+        </label>
+        <label class="search-button">
+          <input type="submit" name="search-button" value="Искать">
+        </label>
       </form>
     </div>
   </section>
@@ -81,15 +85,15 @@
         <section class="page-content__catalog">
           <h3>Пример каталога</h3>
           <ul>
-            <li>Компьютерная техника</li>
-            <li>Бытовая техника и электроника</li>
-            <li>Телефоны и связь</li>
-            <li>Фото и оптика</li>
-            <li>Одежда, обувь и аксессуары</li>
-            <li>Праздники и подарки</li>
-            <li>Книги, учебники и журналы</li>
-            <li>Мебель, интерьер и обиход</li>
-            <li>Другое</li>
+            <li class="catalog-item">Компьютерная техника</li>
+            <li class="catalog-item">Бытовая техника и электроника</li>
+            <li class="catalog-item">Телефоны и связь</li>
+            <li class="catalog-item">Фото и оптика</li>
+            <li class="catalog-item">Одежда, обувь и аксессуары</li>
+            <li class="catalog-item">Праздники и подарки</li>
+            <li class="catalog-item">Книги, учебники и журналы</li>
+            <li class="catalog-item">Мебель, интерьер и обиход</li>
+            <li class="catalog-item">Другое</li>
           </ul>
         </section>
       </div>
@@ -98,17 +102,17 @@
           <a href="#">Главная</a><span>Как купить</span>
         </section>
         <section class="page-content__advanced-search">
-          <button>Расширенный поиск</button>
+          <a href="#">Расширенный поиск</a>
         </section>
         <article class="page-content__article">
           <h1>Как купить наш товар</h1>
           <p>Сегодня у нас Праздник — День рождения Pokupo! Больше года мы шли к этой дате, и вот опубликована первая версия системы, конечно, далеко не всё доступно сейчас и еще многое предстоит сделать, но основной функционал торговой платформы готов.</p>
           <h2>Выбор адреса</h2>
           <p>В славном Екатеринбурге на IV Ежегодной конференции <a href="#">Интернет магазин и бизнес on-line</a>. Мы являемся генеральным спонсором этого хорошего и полезного мероприятия для всех интернет предпринимателей. Это наше первое публичное мероприятие, и мы подготовили доклад на тему «Служба поддержки пользователей»</p>
-          <img src="../images/pages/" alt=""><img src="../images/pages/" alt="">
+          <img src="../images/pages/how-to-buy_photo1.jpg" alt="how-to-buy_photo1">
           <h2>Выбор способа доставки</h2>
           <p>Сегодня у нас Праздник — День рождения Pokupo! Больше года мы шли к этой дате, и вот опубликована первая версия системы, конечно, далеко не всё доступно сейчас и еще многое предстоит сделать, но основной функционал торговой платформы готов. Мы очень рады представить наше творение всем интернет предпринимателям. Для всех, кто не в курсе, что такое Pokupo, добро пожаловать в раздел <a href="#">О проекте</a></p>
-          <img src="../images/pages/" alt="">
+          <img src="../images/pages/how-to-buy_photo2.jpg" alt="how-to-buy_photo2">
           <p>Сегодня у нас Праздник — День рождения Pokupo! Больше года мы шли к этой дате, и вот опубликована первая версия системы, конечно, далеко не всё доступно сейчас и еще многое предстоит сделать, но основной функционал торговой платформы готов.</p>
         </article>
       </div>
