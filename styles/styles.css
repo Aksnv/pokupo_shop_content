@@ -451,18 +451,173 @@ ul {
   margin-bottom: 10px;
 }
 
-
-
 /* Page footer */
 
 .page-footer {
   clear: both;
+  min-height: 245px;
+  background-color: #efece7;
+}
+
+.page-footer__columns {
+  overflow: hidden; 
+  font-size: 13px;
+  text-align: left;
+  line-height: 20px;
+  padding-bottom: 45px;
+  color: #605e5c;
+}
+
+.page-footer__columns a {
+  text-decoration: none;
+  color: #605e5c;
+}
+
+.page-footer__columns a:hover {
+  color: #177a93;
 }
 
 .page-footer__column {
   float: left;
+  width: 25%;
+  margin-top: 41px;
+  padding-left: 2px;
 }
 
-.page-footer__payment-systems {
-  clear: both;
+.contact-icon::before {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  margin-right: 5px;
+  background-image: url(../images/shop-content_sprite.fw.png);
+  background-repeat: no-repeat;
+}
+
+.contact-icon--copyright::before {
+  background-position: -97px -41px;
+}
+
+.contact-icon--email::before {
+  background-position: -97px -61px;
+}
+
+.contact-icon--skype::before {
+  background-position: -97px -83px;
+}
+
+.contact-icon--email a,
+.contact-icon--skype a {
+  color: #177a93;
+  border-bottom: 1px solid #177a93;
+}
+
+.contact-icon--email a:hover,
+.contact-icon--skype a:hover {
+  color: #ffa800;
+  border-bottom: 1px solid #ffa800;
+}
+
+.page-footer__column--sm {
+  float: right;
+  margin-top: 50px;
+  padding-left: 0;
+}
+
+.social-icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 35px;
+  height: 35px;
+  margin-right: 1px;
+  border-radius: 5px;
+  background-image: url("../images/shop-content_sprite.fw.png");
+  background-repeat: no-repeat;
+}
+
+.social-icon a {
+  display: block;
+  width: inherit;
+  height: inherit; 
+  color: transparent;
+}
+
+.social-icon a:hover {
+  color: transparent;
+}
+
+.social-icon--vk {
+  background-position: -7px -41px;
+}
+
+.social-icon--vk:hover {
+  background-position: -7px -83px;
+}
+
+.social-icon--tw {
+  background-position: -52px -41px;
+}
+
+.social-icon--tw:hover {
+  background-position: -52px -83px;
+}
+
+.social-icon--blog {
+  background-position: -141px -41px;
+}
+
+.social-icon--blog:hover {
+  background-position: -141px -83px;
+}
+
+.social-icon--hh {
+  background-position: -182px -41px;
+}
+
+.social-icon--hh:hover {
+  background-position: -182px -83px;
+}
+
+.social-icon--gp {
+  background-position: -225px -41px;
+}
+
+.social-icon--gp:hover {
+  background-position: -225px -83px;
+}
+
+.payment-system__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 44px;
+}
+
+.payment-system__item:nth-child(1) {
+  margin-left: 5px;
+}
+
+.payment-system__item:nth-child(2) {
+  margin-right: 49px;
+}
+
+.payment-system__item:nth-child(3) {
+  margin-right: 51px;
+}
+
+.payment-system__item:nth-child(4) {
+  margin-right: 53px;
+}
+
+.payment-system__item:nth-child(6) {
+  margin-right: 38px;
+}
+
+.payment-system__item:nth-child(7) {
+  margin-right: 42px;
+}
+
+.payment-system__item:nth-child(8) {
+  margin-right: 39px;
 }

@@ -11,3 +11,128 @@
   }
 
 }
+
+@media screen and (max-width: 1024px) {
+
+  /* --------------- Footer --------------- */
+
+  .page-footer__columns {
+    padding-bottom: 35px;
+  }
+
+  .page-footer__columns-left,
+  .page-footer__columns-right {
+    float: left;
+    width: 50%;
+  }
+
+  .page-footer__columns-left {
+    padding-left: 40px;
+  }
+
+  .page-footer__column {
+    float: none;
+    width: 100%;
+  }
+
+  .page-footer__column--center {
+    margin-top: 20px;
+  }
+
+  .page-footer__columns-right {
+    padding-left: 10px;
+  }
+
+  .page-footer__column--sm {
+    margin-top: 45px;
+  }
+
+  .social-icon {
+    margin-right: 1px;
+  }
+
+  .page-footer__payment-system {
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+
+  .payment-system__item:nth-child(n) {
+    margin-right: 14px;
+  }
+
+  .payment-system__item:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .payment-system__item:nth-child(4),
+  .payment-system__item:nth-child(7) {
+    margin-right: 12px;
+  }
+}
+
+
+@media screen and (max-width: 749px) {
+  
+  /* --------------- Footer --------------- */
+
+  .page-footer__columns {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .page-footer__columns-left,
+  .page-footer__columns-right {
+    position: relative;
+    float: none;
+    width: 100%;
+  }
+
+  .page-footer__columns-left {
+    padding-left: 0;
+  }
+
+  .page-footer__column--left {
+    margin-left: -8px;
+  }
+
+  .page-footer__column--center {
+    margin-left: 2px;
+  }
+
+  .page-footer__column--sm {
+    margin-top: 85px;
+    margin-left: -1px;
+  }
+
+  .social-icon {
+    margin-right: 0;
+  }
+
+  .page-footer__column--right {
+    position: absolute;
+    top: -125px;
+    left: 1px;
+  }
+
+  .page-footer__payment-system {
+    text-align: center;
+    padding-left: 25px;
+    padding-bottom: 10px;
+  }
+
+  .payment-system__item:nth-child(n) {
+    margin-right: 16px;
+  }
+
+  .payment-system__item:nth-child(5),
+  .payment-system__item:nth-child(6),
+  .payment-system__item:nth-child(7),
+  .payment-system__item:nth-child(8) {
+    padding-top: 7px;
+  }
+
+  .payment-system__item:nth-child(9) {
+    margin-top: -2px;
+  }
+}
