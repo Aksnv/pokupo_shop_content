@@ -72,6 +72,7 @@ ul {
 .page-header__logo,
 .page-header__header {
   float: left;
+  cursor: pointer;
 }
 
 .page-header__logo {
@@ -81,7 +82,6 @@ ul {
   margin-left: 30px;
   margin-bottom: 18px;
   background-image: url(../images/logo/logo.png);
-  cursor: pointer;
 }
 
 .page-header__header {
@@ -361,6 +361,12 @@ ul {
   cursor: pointer;
 }
 
+.catalog-item a {
+  text-decoration: none;
+  border-bottom: 1px dotted #177a93;
+  color: #177a93;
+}
+
 .catalog-item::before {
   position: absolute;
   top: 12px;
@@ -373,6 +379,18 @@ ul {
   background-repeat: no-repeat;
   background-position: -129px -24px;
   cursor: pointer;
+}
+
+.catalog-item--link::before {
+  display: none;
+}
+
+.catalog-item--link::after {
+  position: absolute;
+  top: 0;
+  left: 118px;
+  content: "24";
+  color: #999;
 }
 
 .page-content__breadcrumbs {
@@ -400,7 +418,9 @@ ul {
 .page-content__breadcrumbs a {
   position: relative;
   display: inline-block;
+  text-decoration: none;
   margin-right: 12px;
+  border-bottom: 1px solid #177a93;
   color: #177a93;
 }
 
@@ -417,7 +437,8 @@ ul {
   position: relative;
   float: right;
   font-size: 16px;
-  margin-top: 15px;
+  margin-top: 14px;
+  border-bottom: 1px dotted #177a93;
 }
 
 .page-content__advanced-search a {
@@ -427,7 +448,7 @@ ul {
 
 .page-content__advanced-search::before {
   position: absolute;
-  top: 6px;
+  top: 7px;
   left: -17px;
   content: "";
   display: block;
@@ -445,13 +466,15 @@ ul {
 .page-content__article h1 {
   font-size: 45px;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-left: -3px;
+  margin-bottom: 31px;
 }
 
 .page-content__article h2 {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-top: 38px;
+  margin-bottom: 12px;
 }
 
 .page-content__article a {
@@ -460,10 +483,12 @@ ul {
 }
 
 .page-content__article p {
-  margin-bottom: 10px;
+  max-width: 600px;
+  margin-bottom: 15px;
 }
 
 .page-content__article p:last-child {
+  margin-top: 10px;
   margin-bottom: 61px;
 }
 
@@ -495,8 +520,7 @@ ul {
 
 .page-footer__column {
   float: left;
-  margin-top: 41px;
-  padding-left: 2px;
+  margin-top: 40px;
 }
 
 .page-footer__column--left {
@@ -550,7 +574,6 @@ ul {
 .page-footer__column--sm {
   float: right;
   margin-top: 50px;
-  padding-left: 0;
 }
 
 .social-icon {
