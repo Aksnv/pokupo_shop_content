@@ -554,7 +554,16 @@ ul {
   display: block;
 }
 
+/* Page content - Reviews */
 
+.page-content__review,
+.page-content__review-answer {
+  clear: both;
+}
+
+.review-ratings__item {
+  float: left;
+}
 
 /* Page footer */
 
