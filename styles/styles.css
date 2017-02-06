@@ -672,7 +672,9 @@ ul {
 
 /* Page content - Contacts */
 
-
+.contacts-column {
+  float: left;
+}
 
 /* Page footer */
 
