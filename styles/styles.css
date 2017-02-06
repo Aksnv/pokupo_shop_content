@@ -374,7 +374,7 @@ ul {
 
 .catalog-item a {
   text-decoration: none;
-  border-bottom: 1px dotted #177a93;
+  border-bottom: 1px dotted #8bbcc9;
   color: #177a93;
 }
 
@@ -401,28 +401,13 @@ ul {
   display: none;
 }
 
-.catalog-item--phones::after {
-  position: absolute;
-  top: 0;
-  left: 118px;
-  content: "24";
+.goods-number {
+  padding-left: 3px;
   color: #999;
 }
 
 .subcatalog {
-  padding-left: 20px;
-}
-
-.subcatalog-item {
-  position: relative;
-}
-
-.subcatalog-item::after {
-  position: absolute;
-  top: 0;
-  left: 100px;
-  content: "24";
-  color: #999;
+  padding-left: 15px;
 }
 
 .page-content__breadcrumbs {
@@ -452,7 +437,7 @@ ul {
   display: inline-block;
   text-decoration: none;
   margin-right: 12px;
-  border-bottom: 1px solid #177a93;
+  border-bottom: 1px solid #8bbcc9;
   color: #177a93;
 }
 
@@ -470,7 +455,7 @@ ul {
   float: right;
   font-size: 16px;
   margin-top: 14px;
-  border-bottom: 1px dotted #177a93;
+  border-bottom: 1px dotted #8bbcc9;
 }
 
 .page-content__advanced-search a {
@@ -731,7 +716,7 @@ a[title="Website"],
 a[title="E-mail"],
 a[title="Skype"],
 a[title="ICQ"] {
-  border-bottom: 1px solid #177a93;
+  border-bottom: 1px solid #8bbcc9;
 }
 
 a[title="Website"]:hover,
@@ -774,21 +759,29 @@ a[title="ICQ"]:hover {
 
 .rub {
   display: inline-block;
-  width: 0.4em;
-  font-family: arial;
+  width: 0.6em;
+  line-height: 11px;
+  vertical-align: baseline;
+  border-bottom: 3px solid;
+}
+
+.rub--sale {
+  display: inline-block;
+  width: 0.6em;
   line-height: 5px;
-  vertical-align: middle;
+  vertical-align: baseline;
   border-bottom: 1px solid;
 }
 
 .subcatalog-item a {
-  border-bottom: 1px solid #177a93;
+  border-bottom: 1px solid #8bbcc9;
   color: #177a93;
 }
 
 .page-content__store {
   position: relative;
   margin-bottom: 30px;
+  padding-top: 27px;
 }
 
 .see-all {
@@ -813,34 +806,71 @@ a[title="ICQ"]:hover {
 
 .page-content__goods {
   display: inline-block;
+  vertical-align: top;
   width: 231px;
   text-align: center;
+  margin-right: 15px;
+  margin-bottom: 87px;
+}
+
+.page-content__goods:nth-child(3n+3) {
+  margin-right: 0;
 }
 
 .goods-header {
   font-size: 18px;
   font-weight: 300;
   font-style: normal;
-  margin-bottom: 20px;
+  line-height: 18px;
+  margin-bottom: 13px;
+  padding-top: 48px;
   color: #177a93;
 }
 
 .goods-header a {
-  text-decoration: underline;
+  border-bottom: 1px solid #8bbcc9;
 }
 
 .goods-price {
   display: block;
   font-size: 30px;
   font-weight: 800;
+  line-height: 30px;
   color: #00883c;
 }
 
-.goods-price--old {
+.goods-price--sale {
+  position: relative;
+  display: inline-block;
   font-size: 15px;
   font-weight: 600;
   text-decoration: line-through;
+  line-height: 15px;
+  padding-top: 3px;
+  padding-left: 7px;
   color: #999;
+}
+
+.goods-price--sale::before,
+.goods-price--sale::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 1px;
+  background-color: #999;
+}
+
+.goods-price--sale::before {
+  width: 10px;
+  top: 8px;
+  left: -5px;
+}
+
+.goods-price--sale::after {
+  width: 20px;
+  top: 8px;
+  right: -5px;
 }
 
 /* Page footer */
@@ -905,7 +935,7 @@ a[title="ICQ"]:hover {
 .contact-icon--email a,
 .contact-icon--skype a {
   color: #177a93;
-  border-bottom: 1px solid #177a93;
+  border-bottom: 1px solid #8bbcc9;
 }
 
 .contact-icon--email a:hover,
