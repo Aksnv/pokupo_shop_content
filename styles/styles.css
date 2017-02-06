@@ -36,6 +36,17 @@ ul {
   background: #ffa800;
 }
 
+.button {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #ffa800;
+  border-radius: 30px;
+}
+
 /* Page header */
 
 .page-header {
@@ -398,6 +409,22 @@ ul {
   color: #999;
 }
 
+.subcatalog {
+  padding-left: 20px;
+}
+
+.subcatalog-item {
+  position: relative;
+}
+
+.subcatalog-item::after {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  content: "24";
+  color: #999;
+}
+
 .page-content__breadcrumbs {
   position: relative;
   float: left;
@@ -727,20 +754,12 @@ a[title="ICQ"]:hover {
   color: #000;
 }
 
-.ask_question {
-  display: block;
+.ask-question {
   width: 158px;
   height: 36px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 34px;
-  text-align: center;
-  text-transform: uppercase;
-  border: 2px solid #ffa800;
-  border-radius: 30px;
 }
 
-.ask_question:hover {
+.ask-question:hover {
   background-color: #ffa800;
 }
 
@@ -748,6 +767,9 @@ a[title="ICQ"]:hover {
 
 .banner-gallery {
   clear: both;
+  width: 729px;
+  height: 330px;
+  margin-bottom: 53px;
 }
 
 .rub {
@@ -764,9 +786,61 @@ a[title="ICQ"]:hover {
   color: #177a93;
 }
 
+.page-content__store {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.see-all {
+  position: absolute;
+  top: -56px;
+  right: 0;
+  width: 165px;
+  height: 40px;
+}
+
+.see-all:hover {
+  background-color: #ffa800;
+}
+
+.store-button a {
+  color: #ffa800;
+}
+
+.store-button a:hover {
+  color: #000;
+}
+
 .page-content__goods {
   display: inline-block;
   width: 231px;
+  text-align: center;
+}
+
+.goods-header {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 20px;
+  color: #177a93;
+}
+
+.goods-header a {
+  text-decoration: underline;
+}
+
+.goods-price {
+  display: block;
+  font-size: 30px;
+  font-weight: 800;
+  color: #00883c;
+}
+
+.goods-price--old {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: line-through;
+  color: #999;
 }
 
 /* Page footer */
