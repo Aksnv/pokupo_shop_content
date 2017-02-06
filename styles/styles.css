@@ -764,6 +764,11 @@ a[title="ICQ"]:hover {
   color: #177a93;
 }
 
+.page-content__goods {
+  display: inline-block;
+  width: 231px;
+}
+
 /* Page footer */
 
 .page-footer {
