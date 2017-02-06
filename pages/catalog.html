@@ -44,9 +44,9 @@
             <li><a href="how-to-buy.html" class="page-header__menu-item">Как купить</a></li>
             <li><a href="delivery.html" class="page-header__menu-item">Доставка</a></li>
             <li><a href="#" class="page-header__menu-item">Гарантии</a></li>
-            <li><a href="reviews.html" class="page-header__menu-item page-header__menu-item--active">Отзывы</a></li>
+            <li><a href="reviews.html" class="page-header__menu-item">Отзывы</a></li>
             <li><a href="#" class="page-header__menu-item">О нас</a></li>
-            <li><a href="contacts.html" class="page-header__menu-item">Контакты</a></li>
+            <li><a href="contacts.html" class="page-header__menu-item page-header__menu-item--active">Контакты</a></li>
           </ul>
         </nav>
         <div class="page-header__platform">
@@ -87,9 +87,21 @@
           <ul>
             <li class="catalog-item"><a href="#">Компьютерная техника</a></li>
             <li class="catalog-item"><a href="#">Бытовая техника и электроника</a></li>
-            <li class="catalog-item catalog-item--link"><a href="#">Телефоны и связь</a></li>
+            <li class="catalog-item catalog-item--open catalog-item--phones"><a href="#">Телефоны и связь</a></li>
             <li class="catalog-item"><a href="#">Фото и оптика</a></li>
-            <li class="catalog-item"><a href="#">Одежда, обувь и аксессуары</a></li>
+            <li class="catalog-item catalog-item--active"><a href="#">Одежда, обувь и аксессуары</a>
+              <ul class="subcatalog">
+                <li class="catalog-item catalog-item--open subcatalog-item"><a href="#">Кроссовки</a></li>
+                <li class="catalog-item catalog-item--open subcatalog-item"><a href="#">Кеды</a></li>
+                <li class="catalog-item catalog-item--open subcatalog-item"><a href="#">Босоножки</a></li>
+                <li class="catalog-item catalog-item--open subcatalog-item"><a href="#">Туфли</a></li>
+                <li class="catalog-item catalog-item--open subcatalog-item"><a href="#">Ботильоны</a></li>
+                <li class="catalog-item catalog-item--open subcatalog-item"><a href="#">Сандалии</a></li>
+                <li class="catalog-item catalog-item--open subcatalog-item"><a href="#">Балетки</a></li>
+                <li class="catalog-item catalog-item--open subcatalog-item"><a href="#">Сапоги</a></li>
+                <li class="catalog-item catalog-item--open subcatalog-item"><a href="#">Резиновая обувь</a></li>
+              </ul>
+            </li>
             <li class="catalog-item"><a href="#">Праздники и подарки</a></li>
             <li class="catalog-item"><a href="#">Книги, учебники и журналы</a></li>
             <li class="catalog-item"><a href="#">Мебель, интерьер и обиход</a></li>
@@ -99,144 +111,53 @@
       </div>
       <div class="page-content__right-column">
         <section class="page-content__breadcrumbs">
-          <a href="../index.html">Главная</a><span>Отзывы</span>
+          <a href="../index.html">Главная</a><a href="catalog.html">Каталог</a><span>Одежда, обувь и аксессуары</span>
         </section>
         <section class="page-content__advanced-search">
           <a href="#">Расширенный поиск</a>
         </section>
+        <section class="banner-gallery">
+          <img src="#" alt="">
+        </section>
         <article class="page-content__article">
-          <h1>Отзывы о магазине</h1>
-
-          <article class="page-content__review">
-            <header class="page-content__review-header page-content__review-header--positive">
-              <strong>Борис</strong>
-              <span> | </span>
-              <time datetime="2014-06-18">18 июня 2014 г.</time>
-            </header>
-            <p>Кеды действительно яркие как на фото.38 размера не было ,заказала 37.Думала что не подойдут,но оказалось что чуть-чуть даже большемерят самый раз чтоб носочками носить .А так то все сделано аккуратно,и спасибо вам за быструю доставку</p>
-            <section class="page-content__review-ratings">
-              <div class="review-ratings__item review-ratings__item--goods">
-                <strong>Качество товаров</strong>
-                <ul>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                </ul>
-              </div>
-              <div class="review-ratings__item review-ratings__item--service">
-                <strong>Качество сервиса</strong>
-                <ul>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                </ul>
-              </div>
-              <div class="review-ratings__item review-ratings__item--speed">
-                <strong>Скорость работы</strong>
-                <ul>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                </ul>
-              </div>
-            </section>
-          </article>
-
-          <article class="page-content__review">
-            <header class="page-content__review-header page-content__review-header--positive">
-              <strong>Наталья</strong>
-              <span> | </span>
-              <time datetime="2014-06-16">16 июня 2014 г.</time>
-            </header>
-            <p>Красные кеды яркие и красивые, очень нравятся, мой размер 36,5, приобрела 36 и оказались несколько свободны, можно было бы и 35 размер купить. Лучше чуть больше, чем маловаты, поэтому всё устраивает. 5 баллов.</p>
-            <section class="page-content__review-ratings">
-              <div class="review-ratings__item review-ratings__item--goods">
-                <strong>Качество товаров</strong>
-                <ul>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                </ul>
-              </div>
-              <div class="review-ratings__item review-ratings__item--service">
-                <strong>Качество сервиса</strong>
-                <ul>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                </ul>
-              </div>
-              <div class="review-ratings__item review-ratings__item--speed">
-                <strong>Скорость работы</strong>
-                <ul>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                </ul>
-              </div>
-            </section>
-            <section class="page-content__review-answer">
-              <header class="page-content__review-header">
-                <strong>Ответ администрации</strong>
-                <span> | </span>
-                <time datetime="2014-06-16">16 июня 2014 г.</time>
-              </header>
-              <p>Спасибо и Вам за доверие!!!Будем рады видеть Вас вновь и вновь ни только на праздники, но и на семейные торжества. Тем более их у Вас станет в два раза больше!!!</p>
-            </section>
-          </article>
-
-          <article class="page-content__review">
-            <header class="page-content__review-header page-content__review-header--negative">
-              <strong>Аркадий</strong>
-              <span> | </span>
-              <time datetime="2014-06-09">9 июня 2014 г.</time>
-            </header>
-            <p>Кеды классные, яркие, но очень большемерят, потому отказ, очень жаль((( подожду, может появится нужный размер.</p>
-            <section class="page-content__review-ratings">
-              <div class="review-ratings__item review-ratings__item--goods">
-                <strong>Качество товаров</strong>
-                <ul>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                </ul>
-              </div>
-              <div class="review-ratings__item review-ratings__item--service">
-                <strong>Качество сервиса</strong>
-                <ul>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                </ul>
-              </div>
-              <div class="review-ratings__item review-ratings__item--speed">
-                <strong>Скорость работы</strong>
-                <ul>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                  <li class="rating-item rating-item--grey"></li>
-                </ul>
-              </div>
-            </section>
-          </article>
+          <h1>Лидеры продаж</h1>
+        
+          <section class="page-content__store">
+            <ul>
+              <li class="page-content__goods">
+                <a href="#"><img src="#" alt=""></a>
+                <a href="#">Converse White</a>
+                <strong class="goods-price">1800 <span class="rub">Р</span></strong>
+              </li>
+              <li class="page-content__goods">
+                <a href="#"><img src="#" alt=""></a>
+                <a href="#">Converse Gray</a>
+                <strong class="goods-price">2450 <span class="rub">Р</span></strong>
+              </li>
+              <li class="page-content__goods">
+                <a href="#"><img src="#" alt=""></a>
+                <a href="#">Converse Red</a>
+                <strong class="goods-price--old">5600 <span class="rub">Р</span></strong>
+                <strong class="goods-price">3750 <span class="rub">Р</span></strong>
+              </li>
+              <li class="page-content__goods">
+                <a href="#"><img src="#" alt=""></a>
+                <a href="#">Converse Red</a>
+                <strong class="goods-price">1800 <span class="rub">Р</span></strong>
+              </li>
+              <li class="page-content__goods">
+                <a href="#"><img src="#" alt=""></a>
+                <a href="#">Converse Pink</a>
+                <strong class="goods-price--old">5600 <span class="rub">Р</span></strong>
+                <strong class="goods-price">3750 <span class="rub">Р</span></strong>
+              </li>
+              <li class="page-content__goods">
+                <a href="#"><img src="#" alt=""></a>
+                <a href="#">Converse Blue</a>
+                <strong class="goods-price">3750 <span class="rub">Р</span></strong>
+              </li>
+            </ul>
+          </section>
 
         </article>
       </div>

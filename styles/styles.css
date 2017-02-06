@@ -381,11 +381,16 @@ ul {
   cursor: pointer;
 }
 
-.catalog-item--link::before {
+.catalog-item--active a {
+  border-bottom: 1px dotted #ffa800;
+  color: #ffa800;
+}
+
+.catalog-item--open::before {
   display: none;
 }
 
-.catalog-item--link::after {
+.catalog-item--phones::after {
   position: absolute;
   top: 0;
   left: 118px;
@@ -737,6 +742,26 @@ a[title="ICQ"]:hover {
 
 .ask_question:hover {
   background-color: #ffa800;
+}
+
+/* Page content - Catalog */
+
+.banner-gallery {
+  clear: both;
+}
+
+.rub {
+  display: inline-block;
+  width: 0.4em;
+  font-family: arial;
+  line-height: 5px;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+}
+
+.subcatalog-item a {
+  border-bottom: 1px solid #177a93;
+  color: #177a93;
 }
 
 /* Page footer */
