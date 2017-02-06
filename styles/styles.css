@@ -702,6 +702,14 @@ a[title="ICQ"] {
   border-bottom: 1px solid #177a93;
 }
 
+a[title="Website"]:hover,
+a[title="E-mail"]:hover,
+a[title="Skype"]:hover,
+a[title="ICQ"]:hover {
+  color: #ffa800;
+  border-bottom: 1px solid #ffa800;
+}
+
 .contacts-column--center {
   margin-right: 142px;
 }
@@ -720,11 +728,15 @@ a[title="ICQ"] {
   height: 36px;
   font-size: 12px;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 34px;
   text-align: center;
   text-transform: uppercase;
   border: 2px solid #ffa800;
   border-radius: 30px;
+}
+
+.ask_question:hover {
+  background-color: #ffa800;
 }
 
 /* Page footer */
