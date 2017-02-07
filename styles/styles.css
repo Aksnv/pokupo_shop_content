@@ -397,6 +397,10 @@ ul {
   color: #ffa800;
 }
 
+.catalog-item--active::before {
+  transform: rotate(180deg);
+}
+
 .catalog-item--open::before {
   display: none;
 }
@@ -410,12 +414,37 @@ ul {
   padding-left: 15px;
 }
 
+.page-content__advanced-search {
+  position: relative;
+  float: right;
+  font-size: 16px;
+  margin-top: 14px;
+  border-bottom: 1px dotted #8bbcc9;
+}
+
+.page-content__advanced-search a {
+  text-decoration: none;
+  color: #177a93;
+}
+
+.page-content__advanced-search::before {
+  position: absolute;
+  top: 7px;
+  left: -17px;
+  content: "";
+  display: block;
+  width: 11px;
+  height: 6px;
+  background-image: url(../images/shop-content_sprite.fw.png);
+  background-repeat: no-repeat;
+  background-position: -128px -41px;
+}
+
 .page-content__breadcrumbs {
   position: relative;
   float: left;
   margin-left: 40px;
   padding-top: 15px;
-  padding-bottom: 28px;
   color: #666;
 }
 
@@ -450,32 +479,6 @@ ul {
   color: #666;
 }
 
-.page-content__advanced-search {
-  position: relative;
-  float: right;
-  font-size: 16px;
-  margin-top: 14px;
-  border-bottom: 1px dotted #8bbcc9;
-}
-
-.page-content__advanced-search a {
-  text-decoration: none;
-  color: #177a93;
-}
-
-.page-content__advanced-search::before {
-  position: absolute;
-  top: 7px;
-  left: -17px;
-  content: "";
-  display: block;
-  width: 11px;
-  height: 6px;
-  background-image: url(../images/shop-content_sprite.fw.png);
-  background-repeat: no-repeat;
-  background-position: -128px -41px;
-}
-
 .page-content__article {
   clear: both;
 }
@@ -485,6 +488,7 @@ ul {
   font-weight: 300;
   margin-left: -3px;
   margin-bottom: 31px;
+  padding-top: 28px;
 }
 
 .page-content__article h2 {
@@ -751,10 +755,48 @@ a[title="ICQ"]:hover {
 /* Page content - Catalog */
 
 .banner-gallery {
+  position: relative;
   clear: both;
   width: 729px;
   height: 330px;
-  margin-bottom: 53px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 10px #919191;
+}
+
+.banner-gallery::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 729px;
+  height: 3px;
+  background-color: rgba(185,183,178,0.7);
+}
+
+.banner-gallery__paginator {
+  position: absolute;
+  left: calc(50% - 37px);
+  bottom: 20px;
+}
+
+.banner-gallery__paginator-item {
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin-right: 14px;
+  border: 1px solid #ffa800;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.banner-gallery__paginator-item:last-child {
+  margin-right: 0;
+}
+
+.banner-gallery__paginator-item--active {
+  background-color: #ffa800;
 }
 
 .rub {
@@ -810,7 +852,7 @@ a[title="ICQ"]:hover {
   width: 231px;
   text-align: center;
   margin-right: 15px;
-  margin-bottom: 87px;
+  margin-bottom: 86px;
 }
 
 .page-content__goods:nth-child(3n+3) {
@@ -863,14 +905,14 @@ a[title="ICQ"]:hover {
 
 .goods-price--sale::before {
   width: 10px;
-  top: 8px;
-  left: -5px;
+  top: 11px;
+  left: -3px;
 }
 
 .goods-price--sale::after {
   width: 20px;
-  top: 8px;
-  right: -5px;
+  top: 11px;
+  right: -11px;
 }
 
 /* Page footer */
