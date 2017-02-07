@@ -787,6 +787,16 @@ a[title="ICQ"]:hover {
   background-color: rgba(185,183,178,0.7);
 }
 
+.banner-gallery__image--2,
+.banner-gallery__image--3,
+.banner-gallery__image--4 {
+  display: none;
+}
+
+.banner-gallery__image--1 {
+  display: block;
+}
+
 .banner-gallery__paginator {
   position: absolute;
   left: calc(50% - 37px);
