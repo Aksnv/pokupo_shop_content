@@ -1,4 +1,4 @@
-/* Нажатие на кнопку Платформа */
+/* Выпадающее верхнее меню */
 
 $(".page-header--bottom__platform-button").click(function() {
 
@@ -6,17 +6,23 @@ $(".page-header--bottom__platform-button").click(function() {
     $(this).removeClass("page-header--bottom__platform-button--open");
     $(this).addClass("page-header--bottom__platform-button--close");
     $(this).html("Свернуть");
+    $(".page-header--bottom__platform-button").css("paddingLeft", "32px");
     $(".page-header--bottom__platform-button::before").css("transform", "rotate(180deg)");
     $(".page-header--top").show();
     $(".page-header--bottom").css("marginTop", 88);
-    $(".page-header--bottom").css("borderTop", "none");
+    /*$(".page-header--bottom").css("borderTop", "none");*/
+    $(".page-header").css("borderTop", "none");
+    $(".page-header").addClass("page-header--open");
   } else {
     $(this).removeClass("page-header--bottom__platform-button--close");
     $(this).addClass("page-header--bottom__platform-button--open");
     $(this).html("Платформа");
+    $(".page-header--bottom__platform-button").css("paddingLeft", "20px");
     $(".page-header--top").hide();
     $(".page-header--bottom").css("marginTop", 0);
-    $(".page-header--bottom").css("borderTop", "5px solid #fff");
+    /*$(".page-header--bottom").css("borderTop", "5px solid #fff");*/
+    $(".page-header").css("borderTop", "5px solid #fff");
+    $(".page-header").removeClass("page-header--open");
   }
 });
 
