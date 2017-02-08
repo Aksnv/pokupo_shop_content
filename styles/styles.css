@@ -77,6 +77,10 @@ ul {
   background-image: url(../images/header_bg2.jpg);
 }
 
+.page-header--3 {
+  background-image: url(../images/header_bg3.jpg);
+}
+
 /* Top header */
 
 .page-header--top {
@@ -183,6 +187,10 @@ ul {
   background-position: -32px -7px;
 }
 
+.page-header--bottom__cart:hover {
+  background-position: -151px -8px;
+}
+
 .page-header--bottom__cart::before {
   position: absolute;
   top: -19px;
@@ -212,6 +220,10 @@ ul {
   margin-right: 30px;
   background-image: url(../images/shop-content_sprite.fw.png);
   background-position: -7px -7px;
+}
+
+.page-header--bottom__login:hover {
+  background-position: -120px -95px;
 }
 
 .page-header--bottom__menu {
@@ -347,6 +359,10 @@ ul {
   border: none;
   background-color: #fff; 
   color: #177a93;
+}
+
+.page-search select:hover { 
+  color: #ffa800;
 }
 
 .select-button {
