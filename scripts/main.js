@@ -97,3 +97,46 @@ $(".page-header--bottom__cart").mouseout(function() {
     $(".page-header--bottom__cart-logo").css("backgroundPosition", "-151px -8px");
   }
 });
+
+
+/* Шапка при скролле страницы */
+
+(function () {
+
+  var body = document.querySelector("body");
+  var pageHeader = document.querySelector(".page-header");
+  var pageHeaderBottom = document.querySelector(".page-header--bottom");
+  var pageHeaderBottomLogo = document.querySelector(".page-header--bottom__logo");
+  var pageHeaderBottomHeader = document.querySelector(".page-header--bottom__header");
+  var pageHeaderBottomCart = document.querySelector(".page-header--bottom__cart");
+  var pageHeaderBottomLogin = document.querySelector(".page-header--bottom__login");
+
+  window.addEventListener("scroll", function(event) {
+
+    var bodyCoordinates = body.getBoundingClientRect();
+    
+    if (bodyCoordinates.top < -207) {
+      pageHeader.classList.remove("page-header");
+      pageHeader.classList.add("page-header__scroll");
+      pageHeaderBottom.classList.add("page-header--bottom--scroll");
+      pageHeaderBottomLogo.classList.add("page-header--bottom__logo--scroll");
+      pageHeaderBottomHeader.classList.add("page-header--bottom__header--scroll");
+      pageHeaderBottomCart.classList.add("page-header--bottom__cart--scroll");
+      pageHeaderBottomLogin.classList.add("page-header--bottom__login--scroll");
+      document.querySelector(".page-header--bottom__menu").style.display = "none";
+      document.querySelector(".page-header--bottom__platform").style.display = "none";
+    } else {
+      pageHeader.classList.add("page-header");
+      pageHeader.classList.remove("page-header__scroll");
+      pageHeaderBottom.classList.remove("page-header--bottom--scroll");
+      pageHeaderBottomLogo.classList.remove("page-header--bottom__logo--scroll");
+      pageHeaderBottomHeader.classList.remove("page-header--bottom__header--scroll");
+      pageHeaderBottomCart.classList.remove("page-header--bottom__cart--scroll");
+      pageHeaderBottomLogin.classList.remove("page-header--bottom__login--scroll");
+      document.querySelector(".page-header--bottom__menu").style.display = "block";
+      document.querySelector(".page-header--bottom__platform").style.display = "block";
+    }
+    
+  });
+
+}());
