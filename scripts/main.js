@@ -115,7 +115,7 @@ $(".page-header--bottom__cart").mouseout(function() {
 
     var bodyCoordinates = body.getBoundingClientRect();
     
-    if (bodyCoordinates.top < -207) {
+    if (bodyCoordinates.top < 0) {
       pageHeader.classList.remove("page-header");
       pageHeader.classList.add("page-header__scroll");
       pageHeaderBottom.classList.add("page-header--bottom--scroll");
@@ -136,7 +136,7 @@ $(".page-header--bottom__cart").mouseout(function() {
       document.querySelector(".page-header--bottom__menu").style.display = "block";
       document.querySelector(".page-header--bottom__platform").style.display = "block";
     }
-    
+
   });
 
 }());

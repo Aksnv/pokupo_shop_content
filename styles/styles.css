@@ -542,10 +542,11 @@ ul {
 
 .page-header--bottom__header--scroll strong {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .page-header--bottom__header--scroll p {
+  font-size: 9px;
   line-height: 13px;
   padding-left: 3px;
 }
