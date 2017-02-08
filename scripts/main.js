@@ -10,7 +10,6 @@ $(".page-header--bottom__platform-button").click(function() {
     $(".page-header--bottom__platform-button::before").css("transform", "rotate(180deg)");
     $(".page-header--top").show();
     $(".page-header--bottom").css("marginTop", 88);
-    /*$(".page-header--bottom").css("borderTop", "none");*/
     $(".page-header").css("borderTop", "none");
     $(".page-header").addClass("page-header--open");
   } else {
@@ -20,7 +19,6 @@ $(".page-header--bottom__platform-button").click(function() {
     $(".page-header--bottom__platform-button").css("paddingLeft", "20px");
     $(".page-header--top").hide();
     $(".page-header--bottom").css("marginTop", 0);
-    /*$(".page-header--bottom").css("borderTop", "5px solid #fff");*/
     $(".page-header").css("borderTop", "5px solid #fff");
     $(".page-header").removeClass("page-header--open");
   }
