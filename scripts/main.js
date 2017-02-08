@@ -1,3 +1,26 @@
+/* Нажатие на кнопку Платформа */
+
+$(".page-header--bottom__platform-button").click(function() {
+
+  if ($(this).hasClass("page-header--bottom__platform-button--open")) {
+    $(this).removeClass("page-header--bottom__platform-button--open");
+    $(this).addClass("page-header--bottom__platform-button--close");
+    $(this).html("Свернуть");
+    $(".page-header--bottom__platform-button::before").css("transform", "rotate(180deg)");
+    $(".page-header--top").show();
+    $(".page-header--bottom").css("marginTop", 88);
+    $(".page-header--bottom").css("borderTop", "none");
+  } else {
+    $(this).removeClass("page-header--bottom__platform-button--close");
+    $(this).addClass("page-header--bottom__platform-button--open");
+    $(this).html("Платформа");
+    $(".page-header--top").hide();
+    $(".page-header--bottom").css("marginTop", 0);
+    $(".page-header--bottom").css("borderTop", "5px solid #fff");
+  }
+});
+
+
 /* Пагинация для баннера */
 
 $(".banner-gallery__paginator-item").click(function() {
