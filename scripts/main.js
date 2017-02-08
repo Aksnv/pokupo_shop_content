@@ -44,3 +44,27 @@ $(".banner-gallery__paginator-item").click(function() {
     }
   } 
 });
+
+
+/* Меню кабинета пользователя */
+
+$(".page-header--bottom__login").click(function() {
+  $(".page-header--bottom__login-inner").toggleClass("page-header--bottom__login-inner--close");
+  if ($(".page-header--bottom__login-inner").hasClass("page-header--bottom__login-inner--close")) {
+    $(".page-header--bottom__login-logo").css("backgroundPosition", "-7px -7px");
+  } else {
+    $(".page-header--bottom__login-logo").css("backgroundPosition", "-120px -95px");
+  }
+});
+
+$(".page-header--bottom__login").mouseover(function() {
+  $(".page-header--bottom__login-logo").css("backgroundPosition", "-120px -95px");
+});
+
+$(".page-header--bottom__login").mouseout(function() {
+  if ($(".page-header--bottom__login-inner").hasClass("page-header--bottom__login-inner--close")) {
+    $(".page-header--bottom__login-logo").css("backgroundPosition", "-7px -7px");
+  } else {
+    $(".page-header--bottom__login-logo").css("backgroundPosition", "-120px -95px");
+  }
+});
