@@ -115,7 +115,7 @@ $(".page-header--bottom__cart").mouseout(function() {
 
     var bodyCoordinates = body.getBoundingClientRect();
     
-    if (bodyCoordinates.top < 0) {
+    if (bodyCoordinates.top < -140) {
       pageHeader.classList.remove("page-header");
       pageHeader.classList.add("page-header__scroll");
       pageHeaderBottom.classList.add("page-header--bottom--scroll");

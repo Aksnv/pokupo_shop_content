@@ -522,12 +522,16 @@ ul {
   display: none;
 }
 
+.page-header--bottom--scroll {
+  min-height: 0;
+}
+
 .page-header--bottom--scroll::before {
   top: 61px;
 }
 
 .page-header--bottom__logo--scroll {
-  width: 160px;
+  width: 67px;
   height: 33px;
   margin-top: 15px;
   margin-left: 30px;
@@ -535,25 +539,25 @@ ul {
 }
 
 .page-header--bottom__header--scroll {
-  padding-top: 14px;
-  padding-left: 10px;
+  padding-top: 16px;
+  padding-left: 5px;
   color: #fff;
 }
 
 .page-header--bottom__header--scroll strong {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 800;
 }
 
 .page-header--bottom__header--scroll p {
-  font-size: 9px;
-  line-height: 13px;
-  padding-left: 3px;
+  font-size: 7px;
+  line-height: 2px;
+  padding-left: 1px;
 }
 
 .page-header--bottom__cart--scroll,
 .page-header--bottom__login--scroll {
-  margin-top: 28px;
+  margin-top: 19px;
 }
 
 .page-header--bottom__cart--scroll .page-header--bottom__cart-logo::before {
