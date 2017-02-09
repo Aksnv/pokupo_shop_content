@@ -117,7 +117,7 @@ $(".page-header--bottom__cart").mouseout(function() {
     
     if (bodyCoordinates.top < -140) {
       pageHeader.classList.remove("page-header");
-      pageHeader.classList.add("page-header__scroll");
+      pageHeader.classList.add("page-header--scroll");
       pageHeaderBottom.classList.add("page-header--bottom--scroll");
       pageHeaderBottomLogo.classList.add("page-header--bottom__logo--scroll");
       pageHeaderBottomHeader.classList.add("page-header--bottom__header--scroll");
@@ -127,7 +127,7 @@ $(".page-header--bottom__cart").mouseout(function() {
       document.querySelector(".page-header--bottom__platform").style.display = "none";
     } else {
       pageHeader.classList.add("page-header");
-      pageHeader.classList.remove("page-header__scroll");
+      pageHeader.classList.remove("page-header--scroll");
       pageHeaderBottom.classList.remove("page-header--bottom--scroll");
       pageHeaderBottomLogo.classList.remove("page-header--bottom__logo--scroll");
       pageHeaderBottomHeader.classList.remove("page-header--bottom__header--scroll");
