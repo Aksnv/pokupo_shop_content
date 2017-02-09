@@ -105,6 +105,9 @@ $(".page-header--bottom__cart").mouseout(function() {
 
   var body = document.querySelector("body");
   var pageHeader = document.querySelector(".page-header");
+
+  var pageHeader2 = document.querySelector(".page-header--2");
+
   var pageHeaderBottom = document.querySelector(".page-header--bottom");
   var pageHeaderBottomLogo = document.querySelector(".page-header--bottom__logo");
   var pageHeaderBottomHeader = document.querySelector(".page-header--bottom__header");
@@ -116,6 +119,9 @@ $(".page-header--bottom__cart").mouseout(function() {
     var bodyCoordinates = body.getBoundingClientRect();
     
     if (bodyCoordinates.top < -140) {
+      if (pageHeader.classList.contains("page-header--2")) {
+        pageHeader.classList.add("page-header--scroll--2");
+      }
       pageHeader.classList.remove("page-header");
       pageHeader.classList.add("page-header--scroll");
       pageHeaderBottom.classList.add("page-header--bottom--scroll");
@@ -128,6 +134,11 @@ $(".page-header--bottom__cart").mouseout(function() {
     } else {
       pageHeader.classList.add("page-header");
       pageHeader.classList.remove("page-header--scroll");
+
+      if (pageHeader.classList.contains("page-header--scroll--2")) {
+        pageHeader.classList.remove("page-header--scroll--2");
+      }
+
       pageHeaderBottom.classList.remove("page-header--bottom--scroll");
       pageHeaderBottomLogo.classList.remove("page-header--bottom__logo--scroll");
       pageHeaderBottomHeader.classList.remove("page-header--bottom__header--scroll");
