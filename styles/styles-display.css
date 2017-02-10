@@ -1,11 +1,5 @@
 @media screen and (min-width: 1920px) {
 
-  .outside-container {
-    position: relative;
-    width: 1920px;
-    margin: 0 auto;
-  }
-
   .page-header::before,
   .page-header::after {
     left: calc(50% - 960px);

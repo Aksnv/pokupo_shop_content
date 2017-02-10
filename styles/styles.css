@@ -16,7 +16,6 @@ ul {
   list-style-type: none;
 }
 
-.outside-container,
 .container {
   width: 978px;
   margin: 0 auto;
