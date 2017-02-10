@@ -134,11 +134,9 @@ $(".page-header--bottom__cart").mouseout(function() {
     } else {
       pageHeader.classList.add("page-header");
       pageHeader.classList.remove("page-header--scroll");
-
       if (pageHeader.classList.contains("page-header--scroll--2")) {
         pageHeader.classList.remove("page-header--scroll--2");
       }
-
       pageHeaderBottom.classList.remove("page-header--bottom--scroll");
       pageHeaderBottomLogo.classList.remove("page-header--bottom__logo--scroll");
       pageHeaderBottomHeader.classList.remove("page-header--bottom__header--scroll");
