@@ -6,12 +6,9 @@
     margin: 0 auto;
   }
 
+  .page-header::before,
   .page-header::after {
     left: calc(50% - 960px);
-  }
-
-  .page-header--top {
-    top: -88px;
   }
 
 }

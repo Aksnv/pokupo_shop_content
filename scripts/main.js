@@ -1,34 +1,3 @@
-/* Выпадающее верхнее меню */
-
-$(".page-header--bottom__platform-button").click(function() {
-
-  if ($(this).hasClass("page-header--bottom__platform-button--open")) {
-    $(this).removeClass("page-header--bottom__platform-button--open");
-    $(this).addClass("page-header--bottom__platform-button--close");
-    $(this).html("Свернуть");
-    $(".page-header--bottom__platform-button").css("paddingLeft", "32px");
-    $(".page-header--bottom__platform-button::before").css("transform", "rotate(180deg)");
-    $(".page-header--top").show();
-    $(".page-header--bottom").css("marginTop", 88);
-    $(".page-header--bottom__platform").css("top", "83px");
-    $(".page-header").css("borderTop", "none");
-    $(".page-header").addClass("page-header--open");
-    $(".page-header--bottom").addClass("page-header--bottom--open");
-  } else {
-    $(this).removeClass("page-header--bottom__platform-button--close");
-    $(this).addClass("page-header--bottom__platform-button--open");
-    $(this).html("Платформа");
-    $(".page-header--bottom__platform-button").css("paddingLeft", "20px");
-    $(".page-header--top").hide();
-    $(".page-header--bottom").css("marginTop", 0);
-    $(".page-header--bottom__platform").css("top", 0);
-    $(".page-header").css("borderTop", "5px solid #fff");
-    $(".page-header").removeClass("page-header--open");
-    $(".page-header--bottom").removeClass("page-header--bottom--open");
-  }
-});
-
-
 /* Пагинация для баннера */
 
 $(".banner-gallery__paginator-item").click(function() {
@@ -52,49 +21,49 @@ $(".banner-gallery__paginator-item").click(function() {
 
 /* Выпадающее меню кабинета пользователя */
 
-$(".page-header--bottom__login").click(function() {
-  $(".page-header--bottom__login-inner").toggleClass("page-header--bottom__login-inner--close");
-  if ($(".page-header--bottom__login-inner").hasClass("page-header--bottom__login-inner--close")) {
-    $(".page-header--bottom__login-logo").css("backgroundPosition", "-7px -7px");
+$(".page-header__login").click(function() {
+  $(".page-header__login-inner").toggleClass("page-header__login-inner--close");
+  if ($(".page-header__login-inner").hasClass("page-header__login-inner--close")) {
+    $(".page-header__login-logo").css("backgroundPosition", "-7px -7px");
   } else {
-    $(".page-header--bottom__login-logo").css("backgroundPosition", "-120px -95px");
+    $(".page-header__login-logo").css("backgroundPosition", "-120px -95px");
   }
 });
 
-$(".page-header--bottom__login").mouseover(function() {
-  $(".page-header--bottom__login-logo").css("backgroundPosition", "-120px -95px");
+$(".page-header__login").mouseover(function() {
+  $(".page-header__login-logo").css("backgroundPosition", "-120px -95px");
 });
 
-$(".page-header--bottom__login").mouseout(function() {
-  if ($(".page-header--bottom__login-inner").hasClass("page-header--bottom__login-inner--close")) {
-    $(".page-header--bottom__login-logo").css("backgroundPosition", "-7px -7px");
+$(".page-header__login").mouseout(function() {
+  if ($(".page-header__login-inner").hasClass("page-header__login-inner--close")) {
+    $(".page-header__login-logo").css("backgroundPosition", "-7px -7px");
   } else {
-    $(".page-header--bottom__login-logo").css("backgroundPosition", "-120px -95px");
+    $(".page-header__login-logo").css("backgroundPosition", "-120px -95px");
   }
 });
 
 
 /* Выпадающая корзина */
 
-$(".page-header--bottom__cart").click(function() {
-  $(".page-header--bottom__cart-inner").toggleClass("page-header--bottom__cart-inner--close");
-  $(".page-header--bottom__cart-logo").toggleClass("page-header--bottom__cart-logo--open");
-  if ($(".page-header--bottom__cart-inner").hasClass("page-header--bottom__cart-inner--close")) {
-    $(".page-header--bottom__cart-logo").css("backgroundPosition", "-32px -7px");
+$(".page-header__cart").click(function() {
+  $(".page-header__cart-inner").toggleClass("page-header__cart-inner--close");
+  $(".page-header__cart-logo").toggleClass("page-header__cart-logo--open");
+  if ($(".page-header__cart-inner").hasClass("page-header__cart-inner--close")) {
+    $(".page-header__cart-logo").css("backgroundPosition", "-32px -7px");
   } else {
-    $(".page-header--bottom__cart-logo").css("backgroundPosition", "-151px -8px");
+    $(".page-header__cart-logo").css("backgroundPosition", "-151px -8px");
   }
 });
 
-$(".page-header--bottom__cart").mouseover(function() {
-  $(".page-header--bottom__cart-logo").css("backgroundPosition", "-151px -8px");
+$(".page-header__cart").mouseover(function() {
+  $(".page-header__cart-logo").css("backgroundPosition", "-151px -8px");
 });
 
-$(".page-header--bottom__cart").mouseout(function() {
-  if ($(".page-header--bottom__cart-inner").hasClass("page-header--bottom__cart-inner--close")) {
-    $(".page-header--bottom__cart-logo").css("backgroundPosition", "-32px -7px");
+$(".page-header__cart").mouseout(function() {
+  if ($(".page-header__cart-inner").hasClass("page-header__cart-inner--close")) {
+    $(".page-header__cart-logo").css("backgroundPosition", "-32px -7px");
   } else {
-    $(".page-header--bottom__cart-logo").css("backgroundPosition", "-151px -8px");
+    $(".page-header__cart-logo").css("backgroundPosition", "-151px -8px");
   }
 });
 
@@ -108,11 +77,10 @@ $(".page-header--bottom__cart").mouseout(function() {
 
   var pageHeader2 = document.querySelector(".page-header--2");
 
-  var pageHeaderBottom = document.querySelector(".page-header--bottom");
-  var pageHeaderBottomLogo = document.querySelector(".page-header--bottom__logo");
-  var pageHeaderBottomHeader = document.querySelector(".page-header--bottom__header");
-  var pageHeaderBottomCart = document.querySelector(".page-header--bottom__cart");
-  var pageHeaderBottomLogin = document.querySelector(".page-header--bottom__login");
+  var pageHeaderLogo = document.querySelector(".page-header__logo");
+  var pageHeaderHeader = document.querySelector(".page-header__header");
+  var pageHeaderCart = document.querySelector(".page-header__cart");
+  var pageHeaderLogin = document.querySelector(".page-header__login");
 
   window.addEventListener("scroll", function(event) {
 
@@ -124,26 +92,22 @@ $(".page-header--bottom__cart").mouseout(function() {
       }
       pageHeader.classList.remove("page-header");
       pageHeader.classList.add("page-header--scroll");
-      pageHeaderBottom.classList.add("page-header--bottom--scroll");
-      pageHeaderBottomLogo.classList.add("page-header--bottom__logo--scroll");
-      pageHeaderBottomHeader.classList.add("page-header--bottom__header--scroll");
-      pageHeaderBottomCart.classList.add("page-header--bottom__cart--scroll");
-      pageHeaderBottomLogin.classList.add("page-header--bottom__login--scroll");
-      document.querySelector(".page-header--bottom__menu").style.display = "none";
-      document.querySelector(".page-header--bottom__platform").style.display = "none";
+      pageHeaderLogo.classList.add("page-header__logo--scroll");
+      pageHeaderHeader.classList.add("page-header__header--scroll");
+      pageHeaderCart.classList.add("page-header__cart--scroll");
+      pageHeaderLogin.classList.add("page-header__login--scroll");
+      document.querySelector(".page-header__menu").style.display = "none";
     } else {
       pageHeader.classList.add("page-header");
       pageHeader.classList.remove("page-header--scroll");
       if (pageHeader.classList.contains("page-header--scroll--2")) {
         pageHeader.classList.remove("page-header--scroll--2");
       }
-      pageHeaderBottom.classList.remove("page-header--bottom--scroll");
-      pageHeaderBottomLogo.classList.remove("page-header--bottom__logo--scroll");
-      pageHeaderBottomHeader.classList.remove("page-header--bottom__header--scroll");
-      pageHeaderBottomCart.classList.remove("page-header--bottom__cart--scroll");
-      pageHeaderBottomLogin.classList.remove("page-header--bottom__login--scroll");
-      document.querySelector(".page-header--bottom__menu").style.display = "block";
-      document.querySelector(".page-header--bottom__platform").style.display = "block";
+      pageHeaderLogo.classList.remove("page-header__logo--scroll");
+      pageHeaderHeader.classList.remove("page-header__header--scroll");
+      pageHeaderCart.classList.remove("page-header__cart--scroll");
+      pageHeaderLogin.classList.remove("page-header__login--scroll");
+      document.querySelector(".page-header__menu").style.display = "block";
     }
 
   });
