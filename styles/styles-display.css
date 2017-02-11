@@ -25,25 +25,12 @@
     width: 50%;
   }
 
-  .page-footer__columns-left {
-    padding-left: 0;
-  }
-
-  .page-footer__column {
-    float: none;
-    width: 100%;
-  }
-
   .page-footer__column--left {
     padding-left: 0;
   }
 
   .page-footer__column--center {
     margin-top: 20px;
-    padding-left: 0;
-  }
-
-  .page-footer__columns-right {
     padding-left: 0;
   }
 
@@ -55,12 +42,7 @@
     margin-top: 45px;
   }
 
-  .social-icon {
-    margin-right: 1px;
-  }
-
   .page-footer__payment-system {
-    text-align: left;
     padding-left: 0;
     padding-bottom: 30px;
   }
