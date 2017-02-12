@@ -1,5 +1,7 @@
 @media screen and (min-width: 1920px) {
 
+  /* --------------- Header --------------- */
+
   .page-header::before,
   .page-header::after {
     left: calc(50% - 960px);
@@ -23,6 +25,13 @@
   .page-footer__columns-right {
     float: left;
     width: 50%;
+  }
+
+  .page-footer__column--left,
+  .page-footer__column--center,
+  .page-footer__column--right,
+  .page-footer__column--sm {
+    width: 100%;
   }
 
   .page-footer__column--left {
@@ -65,9 +74,12 @@
   }
 }
 
-
 @media screen and (max-width: 749px) {
   
+  .container {
+    width: 300px;
+  }
+
   /* --------------- Footer --------------- */
 
   .page-footer__columns {
@@ -82,21 +94,8 @@
     width: 100%;
   }
 
-  .page-footer__columns-left {
-    padding-left: 0;
-  }
-
-  .page-footer__column--left {
-    margin-left: -8px;
-  }
-
-  .page-footer__column--center {
-    margin-left: 2px;
-  }
-
   .page-footer__column--sm {
     margin-top: 85px;
-    margin-left: -1px;
   }
 
   .social-icon {
@@ -105,18 +104,16 @@
 
   .page-footer__column--right {
     position: absolute;
-    top: -125px;
-    left: 1px;
+    top: 145px;
   }
 
   .page-footer__payment-system {
     text-align: center;
-    padding-left: 25px;
     padding-bottom: 10px;
   }
 
   .payment-system__item:nth-child(n) {
-    margin-right: 16px;
+    margin-right: 11px;
   }
 
   .payment-system__item:nth-child(5),
