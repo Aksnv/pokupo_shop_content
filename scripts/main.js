@@ -70,7 +70,7 @@ $(".page-header__cart").mouseout(function() {
 
 /* Шапка при скролле страницы */
 
-/*(function () {
+(function () {
 
   var body = document.querySelector("body");
   var containerStyle = getComputedStyle(document.querySelector(".container"));
@@ -116,4 +116,4 @@ $(".page-header__cart").mouseout(function() {
       }
   });
 
-}());*/
+}());
