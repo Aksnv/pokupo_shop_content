@@ -194,6 +194,41 @@
     margin-bottom: 75px;
   }
 
+  /* Page content - Delivery */
+
+  .delivery-table {
+    width: 640px;
+  } 
+
+  .delivery-table th:nth-child(2) {
+    width: 190px;
+  }
+
+  /* Page content - Reviews */
+
+  .page-content__review-answer {
+    width: 606px;
+  }
+
+  .page-content__review-answer p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Page content - Contacts */
+
+  .page-content__map iframe {
+    width: 670px;
+    height: 315px;
+  }
+
+  .contacts-column--left {
+    margin-right: 90px;
+  }
+
+  .contacts-column--center {
+    margin-right: 112px;
+  }
+
   /* Footer */
 
   .page-footer__columns {
