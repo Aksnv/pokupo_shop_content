@@ -1121,6 +1121,10 @@ a[title="ICQ"]:hover {
   border-bottom: 3px solid;
 }
 
+.rub--word {
+  display: none;
+}
+
 .rub--small {
   line-height: 7px;
   border-bottom: 2px solid;
@@ -1245,6 +1249,10 @@ a[title="ICQ"]:hover {
   width: 20px;
   top: 11px;
   right: -11px;
+}
+
+.in-cart {
+  display: none;
 }
 
 /* Page footer */
