@@ -737,6 +737,28 @@
     width: auto;
   }
 
+  /* Page content - Delivery */
+
+  .delivery-table-wrapper {
+    overflow-x: scroll;
+  }
+
+  /* Page content - Reviews */
+
+  .page-content__review-answer {
+    width: 275px;
+    margin-left: 25px;
+    padding-right: 20px;
+  }
+
+  .page-content__review-answer time {
+    display: block;
+  }
+
+  .page-content__review-answer p:last-child {
+    margin-bottom: 0;
+  }
+
   /* Footer */
 
   .page-footer__columns {
