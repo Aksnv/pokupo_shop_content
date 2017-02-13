@@ -68,6 +68,10 @@
     cursor: pointer;
   }
 
+  .page-header__menu--hamburger:hover {
+    color: #ffa800;
+  }
+
   .page-header__menu--hamburger::before {
     position: absolute;
     top: 4px;
@@ -81,11 +85,16 @@
     cursor: pointer;
   }
 
-  .page-header__menu--hamburger:hover + .page-header__menu {
-    position: absolute;
-    top: 150px;
-    display: block;
-    width: 670px;
+  .page-header__menu--hamburger:hover::before {
+    background-position: -378px -57px;
+  }
+
+  .page-header__menu--hamburger--active {
+    color: #ffa800;
+  }
+
+  .page-header__menu--hamburger--active::before {
+    background-position: -378px -57px;
   }
 
   .page-header__menu {
@@ -93,8 +102,50 @@
     width: 670px;
   }
 
-  .page-header__menu li {
+  .page-header__menu--open {
+    position: absolute;
+    top: 117px;
+    left: 84px;
+    display: block;
+    width: 750px;
+    z-index: 5;
+  }
+
+  .page-header__menu--open li {
     float: none;
+  }
+
+  .page-header__menu--open .page-header__menu-item {
+    height: 52px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 52px;
+    text-transform: none;
+    padding-left: 39px;
+    border-bottom: 1px solid #fff;
+    background-color: #efece7;
+  }
+
+  .page-header__menu--open .page-header__menu-item:hover {
+    color: #00883c;
+  }
+
+  .page-header__menu--open .page-header__menu-item--main-page {
+    position: relative;
+    height: 55px;
+    padding-left: 39px;
+    border-top: 3px solid #00883c;
+  }
+
+  .page-header__menu-item--main-page::before {
+    position: absolute;
+    top: -17px;
+    right: 169px;
+    content: "";
+    display: block;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #00883c;
   }
 
   .cart-inner__goods-price .goods-price {
@@ -327,6 +378,7 @@
     bottom: -10px;
     width: 670px;
     height: 40px;
+    line-height: 38px;
     border: 1px solid #ffa800;
     border-radius: 0;
   }

@@ -67,6 +67,17 @@ $(".page-header__cart").mouseout(function() {
   }
 });
 
+/* Основное выпадающее меню */
+
+$(".page-header__menu--hamburger").click(function() {
+  $(".page-header__menu").toggleClass("page-header__menu--open");
+  if ($(".page-header__menu").hasClass("page-header__menu--open")) {
+    $(".page-header__menu--hamburger").addClass("page-header__menu--hamburger--active");
+  } else {
+    $(".page-header__menu--hamburger").removeClass("page-header__menu--hamburger--active");
+  }
+});
+
 
 /* Шапка при скролле страницы */
 
