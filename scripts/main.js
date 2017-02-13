@@ -67,7 +67,8 @@ $(".page-header__cart").mouseout(function() {
   }
 });
 
-/* Основное выпадающее меню */
+
+/* Выпадающее основное меню */
 
 $(".page-header__menu--hamburger").click(function() {
   $(".page-header__menu").toggleClass("page-header__menu--open");
@@ -78,11 +79,22 @@ $(".page-header__menu--hamburger").click(function() {
   }
 });
 
+
 /* Выпадающее меню каталога */
 
 $(".page-content__catalog-header").click(function() {
   $(".page-content__catalog-header").toggleClass("page-content__catalog-header--open");
   $(".page-content__catalog-list").toggleClass("page-content__catalog-list--open");
+});
+
+$(".catalog-item--active").click(function() {
+  if ($(".subcatalog").css("display") == "block") {
+    $(".subcatalog").hide();
+    $(".catalog-item--active").removeClass("catalog-item--active");
+  } else {
+    $(".subcatalog").show();
+    $(".subcatalog").parent().addClass("catalog-item--active");
+  }
 });
 
 
