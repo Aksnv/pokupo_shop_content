@@ -761,9 +761,9 @@
     width: 300px;
   }
 
-  .page-content__article {
+  /* .page-content__article {
     overflow: hidden;
-  }
+  } */
 
   .page-content__article h1 {
     font-size: 29px;
@@ -782,6 +782,13 @@
   .page-content__article p:last-child {
     margin-top: 10px;
     margin-bottom: 46px;
+  }
+
+  .page-content__article-image {
+    overflow: hidden;
+    position: relative;
+    left: -29px;
+    width: 360px;
   }
 
   .page-content__article img {
