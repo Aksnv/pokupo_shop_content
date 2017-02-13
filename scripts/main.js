@@ -100,7 +100,7 @@ $(".catalog-item--active").click(function() {
 
 /* Шапка при скролле страницы */
 
-/*(function () {
+(function () {
 
   var body = document.querySelector("body");
   var containerStyle = getComputedStyle(document.querySelector(".container"));
@@ -114,6 +114,8 @@ $(".catalog-item--active").click(function() {
   var pageHeaderLogin = document.querySelector(".page-header__login");
 
   window.addEventListener("scroll", function(event) {
+
+    if (containerStyle.width == "978px") {
 
       var bodyCoordinates = body.getBoundingClientRect();
       
@@ -141,9 +143,31 @@ $(".catalog-item--active").click(function() {
         document.querySelector(".page-header__menu").style.display = "block";
       }
 
-      if (containerStyle.width != "978px") {
-        document.querySelector(".page-header__menu").style.display = "none";
-      }
+    }
+
   });
 
-}());*/
+  window.addEventListener("resize", function(event) {
+
+    if (containerStyle.width != "978px") {
+      document.querySelector(".page-header__menu").style.display = "none";
+
+      pageHeader.classList.add("page-header");
+      pageHeader.classList.remove("page-header--scroll");
+      if (pageHeader.classList.contains("page-header--scroll--2")) {
+        pageHeader.classList.remove("page-header--scroll--2");
+      }
+      pageHeaderLogo.classList.remove("page-header__logo--scroll");
+      pageHeaderHeader.classList.remove("page-header__header--scroll");
+      pageHeaderCart.classList.remove("page-header__cart--scroll");
+      pageHeaderLogin.classList.remove("page-header__login--scroll");
+
+    } else if ((containerStyle.width == "978px") && (body.getBoundingClientRect().top > -140)) {
+      document.querySelector(".page-header__menu").style.display = "block";
+    }
+
+  });
+
+}());
+
+
