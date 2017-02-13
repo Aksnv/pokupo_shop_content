@@ -1058,10 +1058,12 @@ a[title="ICQ"]:hover {
 .ask-question {
   width: 158px;
   height: 36px;
+  line-height: 32px;
 }
 
-.ask-question:hover {
+.page-content__contacts .ask-question:hover {
   background-color: #ffa800;
+  color: #000;
 }
 
 /* Page content - Catalog */

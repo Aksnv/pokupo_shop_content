@@ -716,6 +716,7 @@
 
   .page-content__article h1 {
     font-size: 29px;
+    line-height: 29px;
     margin-bottom: 26px;
     padding-top: 39px;
   }
@@ -757,6 +758,31 @@
 
   .page-content__review-answer p:last-child {
     margin-bottom: 0;
+  }
+
+  /* Page content - Contacts */
+
+  .page-content__map iframe {
+    width: 300px;
+    height: 141px;
+  }
+
+  /* .page-content__contacts {
+    text-align: center;
+  } */
+
+  .contacts-column {
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .contacts-column--left,
+  .contacts-column--center {
+    margin-right: 0;
+  }
+
+  .ask-question {
+    width: auto;
   }
 
   /* Footer */
