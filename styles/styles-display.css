@@ -26,17 +26,6 @@
     display: none;
   }
 
-  .page-header::after {
-    position: absolute;
-    top: 198px;
-    display: block;
-    width: 100%;
-    height: 63px;
-    background-image: none;
-    /* background-color: #efece7; */
-    z-index: 0;
-  }
-
   .page-header__logo {
     margin-top: 46px;
     margin-left: 0;
@@ -211,25 +200,26 @@
     width: 670px;
     height: 63px;
     margin-top: 0;
-    /* background-color: #efece7; */
   }
 
   .page-content__catalog h3 {
     display: none;
   }
 
-  .page-content__catalog h3:first-child {
+  .page-content__catalog-header {
     position: relative;
-    display: block;
+    /* display: block; */
+    display: inline-block;
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     padding-top: 22px;
     padding-left: 30px;
     color: #000;
+    cursor: pointer;
   }
 
-  .page-content__catalog h3:first-child::before {
+  .page-content__catalog-header::before {
     position: absolute;
     top: 20px;
     left: 0;
@@ -242,13 +232,53 @@
     cursor: pointer;
   }
 
-  .page-content__catalog ul {
+  .page-content__catalog-header::after {
+    position: absolute;
+    top: 26px;
+    right: 0;
+    content: "";
     display: none;
-    /* position: absolute;
-    top: 63px;
-    width: 100%;
+    width: 13px;
+    height: 13px;
+    background-image: url(../images/shop-content_sprite.fw.png);
+    background-position: -182px -18px;
+    cursor: pointer;
+  }
+
+  .page-content__catalog-header--open {
+    padding-bottom: 17px;
+    background-color: #efece7; 
+  }
+
+  .page-content__catalog-header--open::after {
+    display: block;
+    right: 39px;
+  }
+
+  .page-content__catalog-header--open::before {
+    left: 39px;
+  }
+
+  .page-content__catalog-header--open {
+    left: -39px;
+    display: block;
+    width: 750px;
+    margin-bottom: 0;
+    padding-left: 69px;
+  }
+
+  .page-content__catalog-list {
+    display: none;
+  }
+
+  .page-content__catalog-list--open {
+    position: absolute;
+    top: 57px;
+    left: -39px;
+    display: block;
+    width: 750px;
     background-color: #efece7;
-    z-index: 1; */
+    z-index: 1; 
   }
 
   .catalog-item {
@@ -285,6 +315,88 @@
     background-color: #fff;
     color: #ffa800;
   }
+
+  .page-content__catalog-list--open .catalog-item:hover {
+    background-color: #ffa800;
+  }
+
+  .page-content__catalog-list--open .catalog-item:hover .goods-number {
+    color: #ffdb95;
+  }
+
+  .page-content__catalog-list--open .catalog-item:hover a {
+    font-weight: 700;
+    color: #fff;
+  } 
+
+  .page-content__catalog-list--open .catalog-item a {
+    display: inline-block;
+    width: auto;
+    padding-left: 40px;
+    border-bottom: none;
+  }
+
+  .page-content__catalog-list--open .catalog-item::after,
+  .page-content__catalog-list--open .catalog-item--active::after {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 730px;
+    height: 1px;
+    background-color: #ccc;
+  }
+
+  .page-content__catalog-list--open .catalog-item--active::after {
+    top: 49px;
+  }
+
+  .page-content__catalog-list--open .catalog-item::before {
+    top: 21px;
+    right: 40px;
+  }
+
+  .page-content__catalog-list--open .subcatalog {
+    padding-left: 0;
+  }
+
+  .page-content__catalog-list--open .catalog-item--active,
+  .page-content__catalog-list--open .subcatalog-item {
+    background-color: #fff;
+  }
+
+  .page-content__catalog-list--open .subcatalog-item a {
+    font-weight: 400;
+    padding-left: 68px;
+    color: #000;
+  }
+
+  .page-content__catalog-list--open .catalog-item--active:hover .subcatalog-item a {
+    font-weight: 400;
+    color: #000;
+  }
+
+  .page-content__catalog-list--open .catalog-item--active:hover .goods-number {
+    color: #999;
+  }
+
+  .page-content__catalog-list--open .catalog-item--active:hover a,
+  .page-content__catalog-list--open .catalog-item--active:hover .subcatalog-item:hover a {
+    font-weight: 700;
+    background-color: #ffa800;
+    color: #fff;
+  }
+
+  .page-content__catalog-list--open .catalog-item--active:hover .subcatalog-item a {
+    background-color: #fff;
+  }
+
+  .page-content__catalog-list--open .subcatalog-item:hover .goods-number {
+    color: #ffdb95;
+  }
+
+  
 
   .goods-number {
     position: absolute;

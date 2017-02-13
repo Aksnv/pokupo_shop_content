@@ -78,6 +78,13 @@ $(".page-header__menu--hamburger").click(function() {
   }
 });
 
+/* Выпадающее меню каталога */
+
+$(".page-content__catalog-header").click(function() {
+  $(".page-content__catalog-header").toggleClass("page-content__catalog-header--open");
+  $(".page-content__catalog-list").toggleClass("page-content__catalog-list--open");
+});
+
 
 /* Шапка при скролле страницы */
 

@@ -649,7 +649,7 @@ ul {
   margin-bottom: 17px;
 }
 
-.page-content__catalog h3:first-child {
+.page-content__catalog-header {
   display: none;
 }
 
