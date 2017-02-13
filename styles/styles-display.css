@@ -678,7 +678,7 @@
   .page-header__menu--hamburger {
     position: absolute;
     left: 20px;
-    width: 0;
+    font-size: 0;
     color: transparent;
   }
 
@@ -710,12 +710,31 @@
     width: 300px;
   }
 
+  .page-content__article {
+    overflow: hidden;
+  }
+
   .page-content__article h1 {
     font-size: 29px;
+    margin-bottom: 26px;
+    padding-top: 39px;
+  }
+
+  .page-content__article h2 {
+    margin-top: 27px;
+  }
+
+  .page-content__article p {
+    margin-bottom: 25px;
+  }
+
+  .page-content__article p:last-child {
+    margin-top: 10px;
+    margin-bottom: 46px;
   }
 
   .page-content__article img {
-    width: 300px;
+    width: auto;
   }
 
   /* Footer */
