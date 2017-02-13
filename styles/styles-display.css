@@ -818,6 +818,38 @@
     width: auto;
   }
 
+  /* Page content - Catalog */
+
+  .banner-gallery {
+    left: calc(50% - 180px);
+    width: 360px;
+    height: auto;
+  }
+
+  .banner-gallery__paginator {
+    bottom: 18px;
+  }
+
+  .banner-gallery + .page-content__article {
+    margin-top: 152px;
+  }
+
+  .see-all {
+    width: 300px;
+  }
+
+  .page-content__store {
+    padding-top: 32px;
+  }
+
+  .page-content__goods:nth-child(n) {
+    margin-right: 0;
+  }
+
+  .in-cart {
+    display: block;
+  }
+
   /* Footer */
 
   .page-footer__columns {
