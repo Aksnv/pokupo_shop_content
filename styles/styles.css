@@ -1020,6 +1020,10 @@ ul {
   margin-bottom: 44px;
 }
 
+.contacts-column a:hover {
+  color: #000;
+}
+
 .contacts-column--left {
   margin-right: 120px;
 }

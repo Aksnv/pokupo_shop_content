@@ -106,7 +106,7 @@
   .page-header__menu--open {
     position: absolute;
     top: 117px;
-    left: 84px;
+    left: 109px;
     display: block;
     width: 750px;
     z-index: 5;
@@ -142,7 +142,7 @@
   .page-header__menu-item--main-page::before {
     position: absolute;
     top: -17px;
-    right: 169px;
+    right: 194px;
     content: "";
     display: block;
     border: 7px solid transparent;
@@ -459,6 +459,20 @@
     height: 315px; 
   } 
 
+  .contacts-column a[title="Website"], 
+  .contacts-column a[title="E-mail"], 
+  .contacts-column a[title="Skype"], 
+  .contacts-column a[title="ICQ"] {
+    border-bottom: none;
+  }
+
+  .contacts-column a[title="Website"]:hover, 
+  .contacts-column a[title="E-mail"]:hover, 
+  .contacts-column a[title="Skype"]:hover, 
+  .contacts-column a[title="ICQ"]:hover {
+    border-bottom: none;
+  }
+
   .contacts-column--left {
     margin-right: 90px;
   }
@@ -753,7 +767,6 @@
 
   .page-content__article h1 {
     font-size: 29px;
-    line-height: 29px;
     margin-bottom: 26px;
     padding-top: 39px;
   }
@@ -799,9 +812,15 @@
 
   /* Page content - Contacts */
 
+  .page-content__map {
+    position: absolute;
+    top: 277px;
+    left: -29px;
+  }
+
   .page-content__map iframe {
-    width: 300px;
-    height: 141px;
+    width: 360px;
+    height: 342px;
   }
 
   .contacts-column {
@@ -814,8 +833,17 @@
     margin-right: 0;
   }
 
+  .contacts-column--center {
+    padding-bottom: 385px;
+  }
+
+  .contacts-column--right {
+    padding-top: 2px;
+    padding-bottom: 10px;
+  }
+
   .ask-question {
-    width: auto;
+    margin: 0 auto;
   }
 
   /* Page content - Catalog */
