@@ -12,6 +12,7 @@
 @media screen and (max-width: 1024px) {
 
   .container {
+    position: relative;
     width: 670px;
   }
 
@@ -106,7 +107,7 @@
   .page-header__menu--open {
     position: absolute;
     top: 117px;
-    left: 109px;
+    left: -39px;
     display: block;
     width: 750px;
     z-index: 5;
@@ -448,6 +449,10 @@
     width: 606px;
   }
 
+  .page-content__review-answer span {
+    display: none;
+  }
+
   .page-content__review-answer p:last-child {
     margin-bottom: 0;
   }
@@ -761,10 +766,6 @@
     width: 300px;
   }
 
-  /* .page-content__article {
-    overflow: hidden;
-  } */
-
   .page-content__article h1 {
     font-size: 29px;
     margin-bottom: 26px;
@@ -797,8 +798,83 @@
 
   /* Page content - Delivery */
 
-  .delivery-table-wrapper {
+  /* .delivery-table-wrapper {
     overflow-x: scroll;
+  } */
+
+  .delivery-table {
+    width: 300px;
+  }
+
+  .delivery-table tr {
+    position: relative;
+    display: block;
+    min-height: 247px;
+    padding-top: 146px;
+    border: none;
+  }
+
+  .delivery-table tr:first-child {
+    display: none;
+  }
+
+  .delivery-table tr:last-child {
+    min-height: 126px;
+    padding-top: 70px;
+  }
+
+  .delivery-table tr th:nth-child(n),
+  .delivery-table tr td:nth-child(n) {
+    display: none;
+  }
+
+  .delivery-table tr td:nth-child(1) {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    display: block;
+    z-index: -1;
+  }
+
+  .delivery-table tr td:nth-child(2) {
+    display: block;
+    width: 300px;
+    padding-right: 20px;
+  }
+
+  .delivery-table tr td:nth-child(2)::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Способ доставки";
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 28px;
+    color: #333;
+  }
+
+  .delivery-table tr td:nth-child(2)::after {
+    position: absolute;
+    top: 0;
+    left: -19px;
+    content: "";
+    display: block;
+    width: 340px;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+
+  .delivery-table tr td:nth-child(3) {
+    position: absolute;
+    top: 206px;
+    left: 0;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .delivery-table tr:last-child td:nth-child(3) {
+    top: 145px;
   }
 
   /* Page content - Reviews */
