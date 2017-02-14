@@ -71,11 +71,17 @@ $(".page-header__cart").mouseout(function() {
 /* Выпадающее основное меню */
 
 $(".page-header__menu--hamburger").click(function() {
-  $(".page-header__menu").toggleClass("page-header__menu--open");
   if ($(".page-header__menu").hasClass("page-header__menu--open")) {
-    $(".page-header__menu--hamburger").addClass("page-header__menu--hamburger--active");
+    if ($(".page-header__menu--open").css("display") == "none") {
+      $(".page-header__menu--open").css("display", "block");
+      $(".page-header__menu--hamburger").addClass("page-header__menu--hamburger--active");
+    } else {
+      $(".page-header__menu--open").css("display", "none");
+      $(".page-header__menu--hamburger").removeClass("page-header__menu--hamburger--active");
+    }    
   } else {
-    $(".page-header__menu--hamburger").removeClass("page-header__menu--hamburger--active");
+    $(".page-header__menu").addClass("page-header__menu--open");
+    $(".page-header__menu--open").css("display", "block");
   }
 });
 
@@ -151,6 +157,7 @@ $(".catalog-item--active").click(function() {
 
     if (containerStyle.width != "978px") {
       document.querySelector(".page-header__menu").style.display = "none";
+      document.querySelector(".page-header__menu").classList.add("page-header__menu--open");
 
       pageHeader.classList.add("page-header");
       pageHeader.classList.remove("page-header--scroll");
@@ -164,6 +171,7 @@ $(".catalog-item--active").click(function() {
 
     } else if ((containerStyle.width == "978px") && (body.getBoundingClientRect().top > -140)) {
       document.querySelector(".page-header__menu").style.display = "block";
+      document.querySelector(".page-header__menu").classList.remove("page-header__menu--open");
     }
 
   });

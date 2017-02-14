@@ -397,10 +397,6 @@ ul {
   background-color: #fff;
 }
 
-.page-header__menu--open {
-  display: block;
-}
-
 .page-header__menu--hamburger {
   display: none;
 }
