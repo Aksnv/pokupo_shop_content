@@ -1010,6 +1010,7 @@ ul {
 .page-content__map iframe {
   width: 728px;
   height: 342px;
+  border: none;
 }
 
 .contacts-column {
