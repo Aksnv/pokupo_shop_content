@@ -546,7 +546,7 @@ ul {
 
 .page-search select {
   position: relative;
-  width: 290px;
+  width: 270px;
   height: 52px;
   font-size: 12px;
   font-weight: 800;
@@ -555,12 +555,19 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   border: none;
+  outline: none;
   background-color: #fff; 
   color: #177a93;
+  cursor: pointer;
 }
 
 .page-search select:hover { 
   color: #ffa800;
+}
+
+.page-search option {
+  font-size: 13px;
+  color: #333;
 }
 
 .select-button {
@@ -573,16 +580,25 @@ ul {
 
 .select-button::after {
   position: absolute;
-  top: 40px;
+  top: 37px;
   left: 250px;
   content: "";
   display: block;
-  width: 11px;
-  height: 6px;
+  width: 14px;
+  height: 9px;
   background-image: url(../images/shop-content_sprite.png);
+  background-color: #fff;
   background-repeat: no-repeat;
-  background-position: -128px -41px;
+  background-position: -117px -39px;
   pointer-events: none;
+  z-index: 2;
+}
+
+.select-button--open::after {
+  left: 249px;
+  width: 15px;
+  background-position: -113px -39px;
+  transform: rotate(180deg);
 }
 
 .page-search input[type="submit"] {
@@ -739,7 +755,7 @@ ul {
   height: 6px;
   background-image: url(../images/shop-content_sprite.png);
   background-repeat: no-repeat;
-  background-position: -128px -41px;
+  background-position: -117px -42px;
 }
 
 .page-content__breadcrumbs {

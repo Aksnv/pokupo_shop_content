@@ -85,6 +85,11 @@ $(".page-header__menu--hamburger").click(function() {
   }
 });
 
+/* Выпадающее меню поиска */
+
+$(".page-search select").click(function() {
+  $(".select-button").toggleClass("select-button--open");
+});
 
 /* Выпадающее меню каталога */
 
