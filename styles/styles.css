@@ -258,20 +258,46 @@ a {
 }
 
 .cart-inner__goods-name {
+  width: 235px;
   line-height: 17px;
   padding-left: 29px;
 }
 
 .cart-inner__goods-number {
-  width: 74px;
+  position: relative;
+  width: 20px;
+  text-align: center;
+}
+
+.goods-number--decrement,
+.goods-number--increment {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 5px;
+  background-image: url(../images/shop-content_sprite.png);
+  background-position: -347px -108px;
+}
+
+.goods-number--decrement {
+  top: 31px;
+  left: -16px;
+}
+
+.goods-number--increment {
+  top: 31px;
+  left: 29px;
+  transform: rotate(180deg);
 }
 
 .cart-inner__goods-price {
-  width: 107px;
+  width: 143px;
+  padding-left: 57px;
 }
 
 .cart-inner__close-button {
-  width: 67px;
+  width: 56px;
 }
 
 .close-button {
