@@ -53,6 +53,13 @@ $(".page-header__cart").click(function() {
   } else {
     $(".page-header__cart-logo").css("backgroundPosition", "-151px -8px");
   }
+  if ($(".page-header__login").css("display") == "block") {
+    $(".page-header__login").hide();
+    $(".page-header__cart").css("marginLeft", "46px");
+  } else {
+    $(".page-header__login").show();
+    $(".page-header__cart").css("marginLeft", 0);
+  }
 });
 
 $(".page-header__cart").mouseover(function() {
