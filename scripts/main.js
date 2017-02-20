@@ -85,10 +85,10 @@ $(".page-header__menu--hamburger").click(function() {
   }
 });
 
-/* Выпадающее меню поиска */
+/* Выпадающее меню каталога в разделе Поиск */
 
-$(".page-search select").click(function() {
-  $(".select-button").toggleClass("select-button--open");
+$(".page-search__select").click(function() {
+  $(".page-search__select").toggleClass("page-search__select--open");
 });
 
 /* Выпадающее меню каталога */

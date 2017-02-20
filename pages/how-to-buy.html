@@ -101,20 +101,21 @@
     <div class="container">
       <form name="search-form" action="#" method="post">
         <input type="search" name="search-field" placeholder="Поиск по каталогу...">
-        <label class="select-button">
-          <select>
-            <option>Все категории</option>
-            <option>Компьютерная техника</option>
-            <option>Бытовая техника и электроника</option>
-            <option>Телефоны и связь</option>
-            <option>Фото и оптика</option>
-            <option>Одежда, обувь и аксессуары</option>
-            <option>Праздники и подарки</option>
-            <option>Книги, учебники и журналы</option>
-            <option>Мебель, интерьер и обиход</option>
-            <option>Другое</option>
-          </select>
-        </label>
+        <div class="page-search__select">
+          <a class="page-search__select-header" href="#">Все категории</a>
+          <ul class="page-search__catalog-list">
+            <li><a href="#">Все категории</a></li>
+            <li><a href="#">Компьютерная техника</a></li>
+            <li><a href="#">Бытовая техника и электроника</a></li>
+            <li><a href="#">Телефоны и связь</a></li>
+            <li><a href="#">Фото и оптика</a></li>
+            <li><a href="#">Одежда, обувь и аксессуары</a></li>
+            <li><a href="#">Праздники и подарки</a></li>
+            <li><a href="#">Книги, учебники и журналы</a></li>
+            <li><a href="#">Мебель, интерьер и обиход</a></li>
+            <li><a href="#">Другое</a></li>
+          </ul>
+        </div>
         <label class="search-button">
           <input type="submit" name="search-button" value="Искать">
         </label>
