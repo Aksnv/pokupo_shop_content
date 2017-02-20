@@ -815,6 +815,36 @@
     padding-left: 29px;
   }
 
+  .page-header__cart-inner {
+    left: -292px;
+    width: 360px;
+  }
+
+  .cart-inner__goods-name {
+    width: 175px;
+  }
+
+  .cart-inner__goods-number {
+    padding-left: 10px;
+  }
+
+  .goods-number--decrement {
+    left: -9px;
+  }
+
+  .goods-number--increment {
+    left: 36px;
+  }
+
+  .cart-inner__goods-price {
+    width: 123px;
+    padding-left: 32px;
+  }
+
+  .cart-inner__close-button {
+    width: 44px;
+  }
+
   /* Page search */
 
   .page-search {
