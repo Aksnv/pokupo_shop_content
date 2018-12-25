@@ -1766,20 +1766,20 @@ a[title="ICQ"]:hover {
 
 /* 404 */
 
-.foods-404 {
+.default-404 {
   width: 300px;
   margin: 0 auto;
   margin-top: 10%;
 }
 
-.foods-404__logo {
+.default-404__logo {
   width: 150px;
   height: 75px;
   margin: 0 auto;
   margin-bottom: 120px;
 }
 
-.foods-404__logo img {
+.default-404__logo img {
   display: block;
   width: auto;
   max-width: 150px;
@@ -1787,34 +1787,34 @@ a[title="ICQ"]:hover {
   max-height: 75px;
 }
 
-.foods-404__message,
-.foods-404__return {
+.default-404__message,
+.default-404__return {
   text-align: center;
 }
 
-.foods-404__message p {
+.default-404__message p {
   font-size: 20px;
 }
 
-.foods-404__message strong {
+.default-404__message strong {
   display: block;
   font-size: 114px;
   line-height: 114px;
 }
 
-.foods-404__message {
+.default-404__message {
   margin-bottom: 50px;
   color: #000000;
 }
 
-.foods-404__return p {
+.default-404__return p {
   margin-bottom: 5px;
 }
 
-.foods-404__return a {
+.default-404__return a {
   color: #177a93;
 }
 
-.foods-404__return a:hover {
+.default-404__return a:hover {
   color: #ffa800;
 }
